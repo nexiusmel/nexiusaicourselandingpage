@@ -4,23 +4,17 @@ import { Instructor, Review, ScheduleItem, FaqItem, CurriculumModule } from './t
 
 export const INSTRUCTORS: Instructor[] = [
   {
-    name: "Martin Lim",
-    role: "Principal AI Consultant",
-    image: "https://picsum.photos/id/1/200/200",
-    bio: "Master's in Business Administration with 10+ years in AI strategy."
+    name: "Melverick Ng",
+    role: "Master Trainer",
+    image: "https://tunidbyclygzipvbfzee.supabase.co/storage/v1/object/public/website-images/Melverick%20portrait.jpeg",
+    bio: "Non-techincal Business Consultant with 30+ years professional experience."
   },
   {
-    name: "Dr. Peter Chen",
-    role: "CEO, Synectify",
-    image: "https://picsum.photos/id/2/200/200",
-    bio: "PhD in Computer Science, specializing in Large Language Models."
+    name: "Darryl Wong",
+    role: "Master Sifu",
+    image: "https://tunidbyclygzipvbfzee.supabase.co/storage/v1/object/public/website-images/darryl.jpeg",
+    bio: "AI Enthusiast with CPA, 20+ years professional experience ."
   },
-  {
-    name: "Stan Tan",
-    role: "Lead Data Scientist",
-    image: "https://picsum.photos/id/3/200/200",
-    bio: "Expert in predictive modeling and NLP applications in finance."
-  }
 ];
 
 export const REVIEWS: Review[] = [
@@ -87,47 +81,56 @@ export const FAQS: FaqItem[] = [
 
 export const MODULES: CurriculumModule[] = [
   {
-    title: "Prompt Engineering",
-    description: "Learn zero-shot, few-shot, and chain-of-thought prompting.",
+    title: "AI Fundamentals & LLMs",
+    description: "Understand the Generative AI landscape, LLM architecture, and key tools like ChatGPT, Gemini, and Copilot.",
     iconName: "Brain"
   },
   {
-    title: "Content Generation",
-    description: "Automate blog writing, report generation, and marketing copy.",
+    title: "Advanced Prompt Engineering",
+    description: "Master Zero-shot, Few-shot, and Chain-of-Thought reasoning to elicit precise and complex outputs.",
     iconName: "MessageSquare"
   },
   {
-    title: "Image Generation",
-    description: "Master Midjourney and DALL-E 3 for stunning visuals.",
+    title: "Business Writing & Automation",
+    description: "Automate reports, emails, marketing copy, and proposals while maintaining corporate brand voice.",
+    iconName: "Briefcase"
+  },
+  {
+    title: "Visual Content Creation",
+    description: "Generate professional assets, edit graphics, and create presentations using Midjourney and DALL-E 3.",
     iconName: "Image"
   },
   {
-    title: "AI Tools Integration",
-    description: "Connect AI to Excel, Google Sheets, and other workflows.",
+    title: "Data Analysis & Insights",
+    description: "Leverage AI interpreters to analyze spreadsheets, visualize trends, and extract actionable insights.",
     iconName: "Code"
   },
   {
-    title: "Ethics & Safety",
-    description: "Understand hallucinations, bias, and data privacy.",
+    title: "Ethics, Safety & Governance",
+    description: "Navigate copyright, data privacy (PDPA), hallucinations, and implement safe AI adoption strategies.",
     iconName: "Shield"
-  },
-  {
-    title: "Business Application",
-    description: "Real-world case studies and ROI analysis.",
-    iconName: "Briefcase"
   }
 ];
 
+export const LEARNING_OUTCOMES = [
+  "Understand the principles of Agentic AI and how autonomous agents differ from standard LLMs.",
+  "Identify high-value opportunities to deploy AI agents for business process automation.",
+  "Design and configure basic AI agents to handle scheduling, data retrieval, and reporting.",
+  "Apply prompt engineering strategies to control agent behavior and ensure reliability.",
+  "Analyze the ethical and security implications of deploying autonomous AI in corporate environments."
+];
+
 export const SYSTEM_INSTRUCTION = `
-You are an expert AI Advisor for the 'Nexius Academy Generative AI Masterclass'.
+You are an expert AI Advisor for the 'Nexius Academy Certificate in Applied Generative AI'.
 Your goal is to help potential students understand the course and encourage them to apply.
 Use the following course details to answer questions:
 
-- Course Name: Generative AI Masterclass
-- Price: $1,650 (Full), $643.50 (After 70% Subsidy for SG Citizens 40+), $973.50 (After 50% Subsidy).
-- Duration: 21 Hours Total (7 Lessons + 1 Assessment).
-- Format: Online (Zoom) or In-Person options available.
-- Curriculum: Prompt Engineering, ChatGPT, Image Generation, Business Automation.
+- Course Name: Agentic AI Foundations for Non-Technical Professionals: Enhancing Productivity and Business Process Automation
+- Course Ref: TGS-2025059915
+- Price: $890 (Full), $267.00 (After 70% Subsidy for SG Citizens 40+).
+- Duration: 16 Hours Total (2 full days + 1 Assessment).
+- Format: In-Person.
+- Curriculum: Fundamentals, Advanced Prompt Engineering, Business Writing, Image Generation, Data Analysis, Ethics.
 - Subsidies: SkillsFuture Credits, UTAP, PSEA available.
 - Cert: WSQ Statement of Attainment.
 - Tone: Professional, encouraging, and helpful. Keep answers concise (under 100 words).

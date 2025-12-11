@@ -2,6 +2,8 @@ import React from 'react';
 import { Check } from 'lucide-react';
 
 const Pricing: React.FC = () => {
+  const APPLY_LINK = "https://www.myskillsfuture.gov.sg/content/portal/en/training-exchange/course-directory/course-detail.html?courseReferenceNumber=TGS-2025059915#courseDetailsSection01";
+
   return (
     <section id="pricing" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -10,7 +12,8 @@ const Pricing: React.FC = () => {
           <h2 className="text-3xl font-heading font-bold text-primary mb-4">
             Course Fee & Government Subsidies
           </h2>
-          <p className="text-gray-500">Pay even less or $0 cash with government subsidies.</p>
+          <p className="text-gray-500 mb-2">Pay even less or $0 cash with government subsidies.</p>
+          <p className="text-xs text-gray-400 font-mono">Course Ref No: TGS-2025059915</p>
         </div>
 
         <div className="flex justify-center mb-10">
@@ -30,22 +33,22 @@ const Pricing: React.FC = () => {
                 <div className="space-y-4 mb-8">
                     <div className="flex justify-between items-center text-gray-500 text-sm">
                         <span>Course Fee</span>
-                        <span>$1,650.00</span>
+                        <span>$890.00</span>
                     </div>
                     <div className="flex justify-between items-center text-gray-500 text-sm">
                         <span>GST (9%)</span>
-                        <span>$148.50</span>
+                        <span>$80.10</span>
                     </div>
                     <div className="flex justify-between items-center text-accent font-bold">
                         <span>70% Subsidy</span>
-                        <span>-$1,155.00</span>
+                        <span>-$623.00</span>
                     </div>
                     <div className="h-px bg-gray-200 my-4"></div>
                     <div className="flex justify-between items-end">
                         <span className="font-bold text-primary text-lg">Nett Course Fee</span>
                         <div className="text-right">
-                            <div className="text-3xl font-heading font-extrabold text-primary">$643.50</div>
-                            <div className="text-xs text-gray-400">Pay 0 cash with SkillsFuture</div>
+                            <div className="text-3xl font-heading font-extrabold text-primary">$347.10</div>
+                            <div className="text-xs text-gray-400">Pay $0 cash with SkillsFuture</div>
                         </div>
                     </div>
                 </div>
@@ -54,8 +57,8 @@ const Pricing: React.FC = () => {
                     <p className="font-bold mb-1">Applicable Funding:</p>
                     <ul className="grid grid-cols-2 gap-2">
                         <li className="flex items-center gap-1"><Check size={14} className="text-accent"/> SkillsFuture</li>
-                        <li className="flex items-center gap-1"><Check size={14} className="text-accent"/> UTAP</li>
-                        <li className="flex items-center gap-1"><Check size={14} className="text-accent"/> PSEA</li>
+                        <li className="flex items-center gap-1"><Check size={14} className="text-accent"/> </li>
+                        <li className="flex items-center gap-1"><Check size={14} className="text-accent"/> </li>
                     </ul>
                 </div>
             </div>
@@ -68,22 +71,22 @@ const Pricing: React.FC = () => {
                 <div className="space-y-4 mb-8">
                     <div className="flex justify-between items-center text-gray-500 text-sm">
                         <span>Course Fee</span>
-                        <span>$1,650.00</span>
+                        <span>$890.00</span>
                     </div>
                     <div className="flex justify-between items-center text-gray-500 text-sm">
                         <span>GST (9%)</span>
-                        <span>$148.50</span>
+                        <span>$80.10</span>
                     </div>
                     <div className="flex justify-between items-center text-accent font-bold">
                         <span>50% Subsidy</span>
-                        <span>-$825.00</span>
+                        <span>-$825445.00</span>
                     </div>
                     <div className="h-px bg-gray-200 my-4"></div>
                     <div className="flex justify-between items-end">
                         <span className="font-bold text-primary text-lg">Nett Course Fee</span>
                         <div className="text-right">
-                            <div className="text-3xl font-heading font-extrabold text-primary">$973.50</div>
-                            <div className="text-xs text-gray-400">Pay 0 cash with SkillsFuture</div>
+                            <div className="text-3xl font-heading font-extrabold text-primary">$525.10</div>
+                            <div className="text-xs text-gray-400">Pay $0 cash with SkillsFuture</div>
                         </div>
                     </div>
                 </div>
@@ -92,8 +95,8 @@ const Pricing: React.FC = () => {
                     <p className="font-bold mb-1">Applicable Funding:</p>
                     <ul className="grid grid-cols-2 gap-2">
                         <li className="flex items-center gap-1"><Check size={14} className="text-accent"/> SkillsFuture</li>
-                        <li className="flex items-center gap-1"><Check size={14} className="text-accent"/> UTAP</li>
-                        <li className="flex items-center gap-1"><Check size={14} className="text-accent"/> PSEA</li>
+                        <li className="flex items-center gap-1"><Check size={14} className="text-accent"/> </li>
+                        <li className="flex items-center gap-1"><Check size={14} className="text-accent"/> </li>
                     </ul>
                 </div>
             </div>
@@ -101,9 +104,14 @@ const Pricing: React.FC = () => {
         </div>
 
         <div className="text-center mt-12">
-            <button className="bg-primary hover:bg-blue-900 text-white px-10 py-4 rounded-lg font-bold text-lg shadow-xl shadow-blue-900/20 w-full sm:w-auto">
+            <a 
+              href={APPLY_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-center bg-primary hover:bg-blue-900 text-white px-10 py-4 rounded-lg font-bold text-lg shadow-xl shadow-blue-900/20 w-full sm:w-auto"
+            >
                 Apply Now to Secure Funding
-            </button>
+            </a>
         </div>
 
       </div>

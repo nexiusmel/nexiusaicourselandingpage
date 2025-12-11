@@ -3,6 +3,7 @@ import { Menu, X, ChevronDown } from 'lucide-react';
 
 const StickyNavbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const APPLY_LINK = "https://www.myskillsfuture.gov.sg/content/portal/en/training-exchange/course-directory/course-detail.html?courseReferenceNumber=TGS-2025059915#courseDetailsSection01";
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white shadow-sm border-b border-gray-100">
@@ -25,9 +26,14 @@ const StickyNavbar: React.FC = () => {
             <a href="#pricing" className="text-textDark hover:text-accent font-medium transition-colors">Fees</a>
             <a href="#instructors" className="text-textDark hover:text-accent font-medium transition-colors">Instructors</a>
             <a href="#schedule" className="text-textDark hover:text-accent font-medium transition-colors">Schedule</a>
-            <button className="bg-primary hover:bg-opacity-90 text-white px-6 py-2.5 rounded-md font-bold transition-all shadow-lg shadow-blue-900/20">
+            <a 
+              href={APPLY_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-primary hover:bg-opacity-90 text-white px-6 py-2.5 rounded-md font-bold transition-all shadow-lg shadow-blue-900/20"
+            >
               Apply Now
-            </button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -48,9 +54,14 @@ const StickyNavbar: React.FC = () => {
             <a href="#pricing" onClick={() => setIsOpen(false)} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-accent hover:bg-gray-50">Fees</a>
             <a href="#schedule" onClick={() => setIsOpen(false)} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-accent hover:bg-gray-50">Schedule</a>
             <div className="pt-4 pb-2">
-               <button className="w-full bg-accent text-white px-5 py-3 rounded-md font-bold">
+               <a 
+                href={APPLY_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-center w-full bg-accent text-white px-5 py-3 rounded-md font-bold"
+               >
                 Apply Now
-              </button>
+              </a>
             </div>
           </div>
         </div>
