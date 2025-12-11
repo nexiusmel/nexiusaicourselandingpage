@@ -9,7 +9,7 @@ const Overview: React.FC = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-heading font-bold text-primary mb-4">
-            Learn Generative AI with Vertical Institute
+            Learn Generative AI with Nexius Academy
           </h2>
           <div className="w-24 h-1.5 bg-accent mx-auto rounded-full"></div>
         </div>

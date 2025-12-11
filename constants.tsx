@@ -119,7 +119,7 @@ export const MODULES: CurriculumModule[] = [
 ];
 
 export const SYSTEM_INSTRUCTION = `
-You are an expert AI Advisor for the 'Vertical Institute Generative AI Masterclass'.
+You are an expert AI Advisor for the 'Nexius Academy Generative AI Masterclass'.
 Your goal is to help potential students understand the course and encourage them to apply.
 Use the following course details to answer questions:
 

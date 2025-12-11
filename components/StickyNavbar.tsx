@@ -11,10 +11,10 @@ const StickyNavbar: React.FC = () => {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center gap-2 cursor-pointer">
             <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-accent font-bold text-xl">
-              V
+              N
             </div>
             <span className="font-heading font-bold text-xl text-primary tracking-tight">
-              Vertical<span className="text-accent">Institute</span>
+              Nexius<span className="text-accent">Academy</span>
             </span>
           </div>
 

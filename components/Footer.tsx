@@ -10,11 +10,11 @@ const Footer: React.FC = () => {
             {/* Brand */}
             <div className="space-y-6">
                 <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 bg-accent rounded flex items-center justify-center text-primary font-bold">V</div>
-                    <span className="font-heading font-bold text-xl">Vertical<span className="text-accent">Institute</span></span>
+                    <div className="w-8 h-8 bg-accent rounded flex items-center justify-center text-primary font-bold">N</div>
+                    <span className="font-heading font-bold text-xl">Nexius<span className="text-accent">Academy</span></span>
                 </div>
                 <p className="text-gray-300 text-sm leading-relaxed">
-                    Vertical Institute is the leading tech bootcamp in Singapore, empowering individuals with in-demand digital skills for the future of work.
+                    Nexius Academy is the leading tech bootcamp in Singapore, empowering individuals with in-demand digital skills for the future of work.
                 </p>
                 <div className="flex gap-4">
                     <a href="#" className="w-8 h-8 rounded bg-white/10 flex items-center justify-center hover:bg-accent hover:text-white transition-colors"><Facebook size={16} /></a>
@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
             {/* App CTA */}
             <div>
                  <h4 className="font-bold text-lg mb-6 text-accent">Contact</h4>
-                 <p className="text-sm text-gray-300 mb-2">admissions@verticalinstitute.com</p>
+                 <p className="text-sm text-gray-300 mb-2">admissions@nexiusacademy.com</p>
                  <p className="text-sm text-gray-300 mb-6">+65 1234 5678</p>
                  <button className="bg-white/10 border border-white/20 hover:bg-white hover:text-primary text-white w-full py-2 rounded mb-2 transition-all">
                     Sign Up for Newsletter
@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400">
-            <p>&copy; 2025 Vertical Institute. All rights reserved.</p>
+            <p>&copy; 2025 Nexius Academy. All rights reserved.</p>
             <div className="flex gap-6">
                 <a href="#" className="hover:text-white">Privacy Policy</a>
                 <a href="#" className="hover:text-white">Terms of Service</a>
