@@ -10,7 +10,7 @@ const FAQ: React.FC = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center mb-12">
-            <h2 className="text-3xl font-heading font-bold text-primary mb-4">Generative AI Course FAQs</h2>
+            <h2 className="text-3xl font-heading font-bold text-primary mb-4">Course FAQs</h2>
             <p className="text-gray-500">Have questions? Check our most asked questions below.</p>
         </div>
 
