@@ -2,15 +2,10 @@ import { GoogleGenAI, GenerateContentResponse } from "@google/genai";
 import { SYSTEM_INSTRUCTION } from '../constants';
 
 // Initialize the Gemini Client
-// In a real app, strict error handling for missing API key should be here.
-const apiKey = process.env.API_KEY || '';
-const ai = new GoogleGenAI({ apiKey });
+// The API key must be obtained exclusively from the environment variable process.env.API_KEY.
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 export const generateAIResponse = async (userMessage: string): Promise<string> => {
-  if (!apiKey) {
-    return "I'm sorry, I cannot process your request right now (Missing API Key).";
-  }
-
   try {
     const response: GenerateContentResponse = await ai.models.generateContent({
       model: 'gemini-2.5-flash',
